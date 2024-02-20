@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth focus:scroll-auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trans-Ticket</title>
+    <link rel="icon" href="./images/transport.png" type="png/icon" />
+    <!-- Flowbite and Tailwind -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans text-pretty">
+    <!-- Header Section  -->
+    <header class="px-4 md:px-12 lg:px-24">
+      <!-- Nav Section  -->
+      <nav class="bg-white border-gray-200">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a
+            href="https://trans-ticket.netlify.app/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <span
+              class="self-center text-2xl lg:text-4xl font-extrabold whitespace-nowrap"
+              >P-Poribohon</span
+            >
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="text-[#1DD100] bg-[#1DD1001A] border border-[#1DD10066] focus:outline-none font-bold rounded-xl text-sm px-4 py-2 text-center flex gap-2"
+            >
+              Bus <img src="./images/bus-icon.png" alt="bus-icon" />
+            </button>
+            <button
+              data-collapse-toggle="navbar-cta"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="navbar-cta"
+              aria-expanded="false"
+            >
+              <img src="./images/burger-menu.png" alt="burger-menu" />
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-cta"
+          >
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-[#1DD10066] rounded-xl bg-[#1DD1001A] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-[#1DD100] md:text-[#030712B2] bg-white rounded md:bg-transparent"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-[#1DD100] md:text-[#030712B2] rounded md:bg-transparent"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-[#1DD100] md:text-[#030712B2] rounded md:bg-transparent"
+                  >Destination</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-[#1DD100] md:text-[#030712B2] rounded md:bg-transparent"
+                  >Search</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner Section  -->
+
+      <section>
+        <div
+          class="bg-bottom bg-no-repeat bg-[url('./images/banner.png')] bg-cover rounded-[32px]"
+        >
+          <div
+            class="px-4 py-24 lg:py-56 max-w-screen-xl text-center lg:h-[550px] flex flex-col items-center justify-center"
+          >
+            <h1
+              class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl max-w-3xl"
+            >
+              End-to-End Travel with
+              <span class="text-[#1DD100]">Trans Vehicle</span>
+            </h1>
+            <p
+              class="mb-3 lg:mb-8 text-sm md:text-lg font-normal text-white lg:text-xl max-w-2xl"
+            >
+              Trans Vehicle simplifies bus travel. Streamlined reservations,
+              comfort, and efficient routes for stress-free journeys,
+              revolutionizing the way you book and experience transportation.
+            </p>
+            <a
+              href="#transVehicle"
+              class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[#1DD100] border-2 border-[#1DD100] hover:bg-transparent"
+            >
+              Buy Tickets
+            </a>
+          </div>
+        </div>
+        <div
+          class="flex gap-6 justify-center flex-col md:flex-row mt-6 lg:-translate-y-2/3"
+        >
+          <div
+            class="flex gap-4 justify-center md:justify-normal items-center rounded-3xl border-2 lg:border-r-0 lg:border-l-0 lg:border-t-0 lg:border-b-[3px] border-[#1DD100] p-8 md:p-6 lg:p-8 bg-white"
+          >
+            <img
+              class="max-w-16 md:max-w-10 lg:max-w-16"
+              src="./images/people.png"
+              alt="group"
+            />
+            <div class="space-y-2">
+              <h3
+                class="text-[#030712] text-4xl md:text-2xl lg:text-4xl font-bold"
+              >
+                500K+
+              </h3>
+              <p class="text-[#03071299] text-lg md:text-sm lg:text-lg">
+                Registered users
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex gap-4 justify-center md:justify-normal items-center rounded-3xl border-2 lg:border-r-0 lg:border-l-0 lg:border-t-0 lg:border-b-[3px] border-[#1DD100] p-8 md:p-6 lg:p-8 bg-white"
+          >
+            <img
+              class="max-w-16 md:max-w-10 lg:max-w-16"
+              src="./images/ticket-cupon.png"
+              alt="group"
+            />
+            <div class="space-y-2">
+              <h3
+                class="text-[#030712] text-4xl md:text-2xl lg:text-4xl font-bold"
+              >
+                1.7 lacks
+              </h3>
+              <p class="text-[#03071299] text-lg md:text-sm lg:text-lg">
+                Tickets sold
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex gap-4 justify-center md:justify-normal items-center rounded-3xl border-2 lg:border-r-0 lg:border-l-0 lg:border-t-0 lg:border-b-[3px] border-[#1DD100] p-8 md:p-6 lg:p-8 bg-white"
+          >
+            <img
+              class="max-w-16 md:max-w-10 lg:max-w-16"
+              src="./images/stoppage.png"
+              alt="group"
+            />
+            <div class="space-y-2">
+              <h3
+                class="text-[#030712] text-4xl md:text-2xl lg:text-4xl font-bold"
+              >
+                80K+
+              </h3>
+              <p class="text-[#03071299] text-lg md:text-sm lg:text-lg">
+                Rental partners
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- Main Section  -->
+    <main>
+      <!-- Coupon Section  -->
+      <section
+        class="mt-8 flex flex-col justify-center items-center space-y-5 md:space-y-10 lg:space-y-14 px-4 md:px-12 lg:px-24"
+      >
+        <h1 class="text-3xl lg:text-[40px] font-bold">Best offers for you</h1>
+        <div class="flex flex-col md:flex-row gap-6">
+          <div
+            class="bg-[#FFBF0F] rounded-3xl flex items-center justify-center px-4 lg:px-12 gap-0 lg:gap-5"
+          >
+            <ul class="text-[#030712CC]">
+              <li class="text-3xl md:text-2xl lg:text-[40px] font-black">
+                15% OFF
+              </li>
+              <li class="text-xs md:text-sm lg:text-xl font-semibold">
+                on your next purchase
+              </li>
+              <li class="text-xs lg:text-lg font-medium text-[#03071280]">
+                use by January 2024
+              </li>
+            </ul>
+            <img src="./images/cupon-devider.png" alt="coupon-divider" />
+            <ul>
+              <li class="text-xl lg:text-[32px] text-[#030712] font-bold">
+                NEW<sub class="text-lg md:text-xl lg:text-3xl">15</sub>
+              </li>
+              <li class="text-[#03071266] text-xs lg:text-xl font-medium">
+                Coupon Code
+              </li>
+            </ul>
+          </div>
+          <div
+            class="bg-[#F78C9C] rounded-3xl flex items-center justify-center px-4 lg:px-12 gap-0 lg:gap-5"
+          >
+            <ul class="text-[#030712CC]">
+              <li class="text-3xl md:text-2xl lg:text-[40px] font-black">
+                20% OFF
+              </li>
+              <li class="text-xs md:text-sm lg:text-xl font-semibold">
+                on your next purchase
+              </li>
+              <li class="text-xs lg:text-lg font-medium text-[#03071280]">
+                use by January 2024
+              </li>
+            </ul>
+            <img src="./images/cupon-devider.png" alt="coupon-divider" />
+            <ul>
+              <li class="text-xl lg:text-[32px] text-[#030712] font-bold">
+                Couple 20
+              </li>
+              <li class="text-[#03071266] text-xs lg:text-xl font-medium">
+                Coupon Code
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="text-[#1DD100] hover:text-white border border-[#1DD100] hover:bg-[#1DD100] focus:outline-none font-semibold rounded-xl text-xl px-5 py-2.5 text-center me-2 mb-2"
+        >
+          See All Offers
+        </button>
+      </section>
+      <!-- Ticket Booking Section  -->
+      <section
+        id="transVehicle"
+        class="px-4 md:px-12 lg:px-24 bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-[58px] lg:rounded-t-[88px] mt-10 md:mt-16 lg:mt-28 py-8 md:py-14 lg:py-20"
+      >
+        <h1
+          class="text-[#030712] text-3xl lg:text-[40px] font-bold text-center"
+        >
+          Trans Vehicle
+        </h1>
+        <p
+          class="text-center mt-6 text-[#03071299] text-lg max-w-[736px] mx-auto"
+        >
+          Trans Vehicle Booking streamlines bus reservations, ensuring
+          convenient travel with efficient routes and comfortable rides,
+          enhancing your transportation experience.
+        </p>
+        <!-- Time Schedule Section  -->
+        <div
+          class="flex flex-col-reverse lg:grid lg:grid-cols-12 items-center gap-4 lg:gap-8 bg-white py-8 lg:py-0 px-8 rounded-3xl mt-10"
+        >
+          <div class="space-y-6 lg:col-span-9">
+            <div
+              class="flex flex-col-reverse md:flex-row justify-between items-center gap-4"
+            >
+              <ul
+                class="grid grid-cols-3 items-center text-center md:text-left"
+              >
+                <li class="hidden md:grid md:row-span-2">
+                  <img src="./images/bus-logo.png" alt="bus-logo" />
+                </li>
+                <li
+                  class="text-lg md:text-xl lg:text-[32px] font-bold text-[#030712] col-span-3 md:col-span-2"
+                >
+                  Trans Vehicle
+                </li>
+                <li
+                  class="text-xs md:text-base lg:text-lg text-[#03071299] col-span-3 md:col-span-2"
+                >
+                  Coach-1703-WEB9 ! AC_Business
+                </li>
+              </ul>
+              <h4
+                class="text-base lg:text-lg text-[#1DD100] flex gap-1 bg-[#1DD10026] rounded-xl p-2 lg:p-4 justify-center items-center"
+              >
+                <img src="./images/seat-green.png" alt="seat-green" /><span
+                  id="seatsLeft"
+                  >40
+                </span>
+                Seats left
+              </h4>
+            </div>
+            <div class="bg-[#F7F8F8] rounded-3xl p-8">
+              <ul
+                class="text-lg font-semibold border-b-2 border-dashed border-[#03071233] pb-3 md:pb-6 flex flex-col md:flex-row items-center justify-between"
+              >
+                <li class="text-[#03071299]">Route</li>
+                <li class="text-[#030712]">Dhaka - Sylhet</li>
+              </ul>
+              <ul
+                class="text-lg font-semibold border-b-2 border-dashed border-[#03071233] flex flex-col md:flex-row items-center justify-between py-3 md:py-6"
+              >
+                <li class="text-[#03071299]">Departure Time</li>
+                <li class="text-[#030712]">9:00 PM</li>
+              </ul>
+              <ul
+                class="text-[#030712CC] text-sm lg:text-base font-medium flex flex-col md:flex-row justify-between pt-3 md:pt-6 gap-3 text-center"
+              >
+                <li class="bg-[#0307120D] rounded-xl p-2 lg:p-4">
+                  Boarding Point - Laxmipur
+                </li>
+                <li class="bg-[#0307120D] rounded-xl p-2 lg:p-4">
+                  Dropping Point - Bogura
+                </li>
+                <li class="bg-[#0307120D] rounded-xl p-2 lg:p-4">
+                  Est. Time - 11 Hour
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img
+            class="hidden lg:grid lg:col-span-1"
+            src="./images/info-devider.png"
+            alt="info-divider"
+          />
+          <ul class="flex flex-col justify-center items-center lg:col-span-2">
+            <li><img src="./images/fare.png" alt="fare" /></li>
+            <li class="text-[#030712] text-xl lg:text-[32px] font-bold">
+              550 Taka
+            </li>
+            <li class="text-[#03071299] text-lg lg:text-2xl font-semibold">
+              Per Seat
+            </li>
+          </ul>
+        </div>
+        <!-- Seat Select and Confirm Section  -->
+        <div
+          class="flex flex-col lg:flex-row gap-6 p-8 justify-between bg-white mt-7 rounded-3xl"
+        >
+          <div
+            class="border-b-2 lg:border-b-0 pb-6 lg:pb-0 lg:pr-8 lg:border-r-2 border-dashed border-[#03071233] flex-1"
+          >
+            <h2
+              class="text-2xl font-semibold text-[#030712] border-b-2 border-dashed border-[#03071233] pb-6"
+            >
+              Select Your Seat
+            </h2>
+            <ul
+              class="font-medium text-lg text-[#03071280] flex justify-between border-b-2 border-dashed border-[#03071233] py-5"
+            >
+              <li class="flex gap-2">
+                <img src="./images/seat-gray.png" alt="seat-gray" />Available
+              </li>
+              <li id="unselected" class="flex gap-2">
+                <img src="./images/seat-gray.png" alt="seat-gray" />Selected
+              </li>
+              <li id="selected" class="hidden gap-2 text-[#1DD100]">
+                <img
+                  src="./images/seat-green-filled.png"
+                  alt="seat-gray"
+                />Selected
+              </li>
+            </ul>
+            <!-- Seat Selection Section  -->
+            <div class="relative shadow-md rounded-lg mt-6">
+              <table class="w-full text-sm text-left rtl:text-right">
+                <tbody>
+                  <tr class="border-b grid grid-cols-1 sm:rounded-t-lg">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 bg-[#0307121A] rounded-xl w-[110px] place-self-end mb-3 mr-3"
+                    >
+                      <img
+                        class="mx-auto"
+                        src="./images/tabler-icon-steering-wheel.png"
+                        alt="wheel"
+                      />
+                    </th>
+                  </tr>
+                  <!-- A  -->
+                  <tr
+                    class="border-b grid grid-cols-2 md:grid-cols-9 items-center text-center"
+                  >
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-[#03071280] text-lg col-span-2 md:col-span-1"
+                    >
+                      A
+                    </th>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        A1
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        A2
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        A3
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        A4
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- B  -->
+                  <tr
+                    class="border-b grid grid-cols-2 md:grid-cols-9 items-center text-center"
+                  >
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-[#03071280] text-lg col-span-2 md:col-span-1"
+                    >
+                      B
+                    </th>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        B1
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        B2
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        B3
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        B4
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- C  -->
+                  <tr
+                    class="border-b grid grid-cols-2 md:grid-cols-9 items-center text-center"
+                  >
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-[#03071280] text-lg col-span-2 md:col-span-1"
+                    >
+                      C
+                    </th>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        C1
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        C2
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        C3
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        C4
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- D  -->
+                  <tr
+                    class="border-b grid grid-cols-2 md:grid-cols-9 items-center text-center"
+                  >
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-[#03071280] text-lg col-span-2 md:col-span-1"
+                    >
+                      D
+                    </th>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        D1
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        D2
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        D3
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        D4
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- E  -->
+                  <tr
+                    class="border-b grid grid-cols-2 md:grid-cols-9 items-center text-center"
+                  >
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-[#03071280] text-lg col-span-2 md:col-span-1"
+                    >
+                      E
+                    </th>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        E1
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        E2
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        E3
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        E4
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- F  -->
+                  <tr
+                    class="border-b grid grid-cols-2 md:grid-cols-9 items-center text-center"
+                  >
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-[#03071280] text-lg col-span-2 md:col-span-1"
+                    >
+                      F
+                    </th>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        F1
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        F2
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        F3
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        F4
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- G  -->
+                  <tr
+                    class="border-b grid grid-cols-2 md:grid-cols-9 items-center text-center"
+                  >
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-[#03071280] text-lg col-span-2 md:col-span-1"
+                    >
+                      G
+                    </th>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        G1
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        G2
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        G3
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        G4
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- H  -->
+                  <tr
+                    class="border-b grid grid-cols-2 md:grid-cols-9 items-center text-center"
+                  >
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-[#03071280] text-lg col-span-2 md:col-span-1"
+                    >
+                      H
+                    </th>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        H1
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        H2
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        H3
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        H4
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- I  -->
+                  <tr
+                    class="border-b grid grid-cols-2 md:grid-cols-9 items-center text-center"
+                  >
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-[#03071280] text-lg col-span-2 md:col-span-1"
+                    >
+                      I
+                    </th>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        I1
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        I2
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        I3
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        I4
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- J  -->
+                  <tr
+                    class="border-b grid grid-cols-2 md:grid-cols-9 items-center text-center"
+                  >
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-[#03071280] text-lg col-span-2 md:col-span-1"
+                    >
+                      J
+                    </th>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        J1
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        J2
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        J3
+                      </button>
+                    </td>
+                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                      <button
+                        id="bookingBtn"
+                        type="button"
+                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                      >
+                        J4
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="lg:w-96">
+            <h2
+              class="text-2xl font-semibold text-[#030712] border-b-2 border-dashed border-[#03071233] pb-6"
+            >
+              Confirm Your Seat
+            </h2>
+            <!-- Confirm Selection Section  -->
+            <div>
+              <div class="p-8 bg-[#F7F8F8] mt-6 rounded-xl">
+                <ul
+                  class="text-[#030712] text-base font-medium flex justify-between items-center border-b-2 border-dashed border-[#03071233] pb-4"
+                >
+                  <li>
+                    Seat
+                    <span
+                      id="seatCount"
+                      class="text-xs font-bold text-white bg-[#1DD100] rounded-2xl px-2"
+                      >0</span
+                    >
+                  </li>
+                  <li>Class</li>
+                  <li>Price</li>
+                </ul>
+                <ul
+                  id="selectedSeat"
+                  class="text-[#03071299] text-base grid grid-cols-3 border-b-2 border-[#03071233] pb-4"
+                ></ul>
+                <ul
+                  id="theprice"
+                  class="text-[#030712] text-base font-medium grid grid-cols-2 py-4"
+                >
+                  <li>Total Price</li>
+                  <li class="place-self-end">
+                    BDT <span id="totalPrice">0</span>
+                  </li>
+                </ul>
+
+                <form id="removable">
+                  <div class="relative">
+                    <input
+                      type="text"
+                      id="couponInput"
+                      class="block w-full p-2 md:p-4 ps-5 md:ps-10 text-sm md:text-lg text-amber-500 border border-gray-300 rounded-xl bg-gray-50 focus:ring-pink-400 focus:border-pink-400"
+                      placeholder="Have any coupon?"
+                    />
+                    <button
+                      type="button"
+                      id="couponSubmit"
+                      class="text-white absolute end-2 md:end-2.5 bottom-1.5 md:bottom-2.5 bg-[#1DD100] hover:shadow-lg focus:outline-none font-semibold rounded-lg text-xs md:text-base px-2 md:px-4 py-1 md:py-2 cursor-not-allowed"
+                      disabled
+                    >
+                      Apply
+                    </button>
+                  </div>
+                </form>
+                <ul
+                  class="text-[#030712] text-base font-medium grid grid-cols-2 pt-4"
+                >
+                  <li>Grand Total</li>
+                  <li class="place-self-end">
+                    BDT <span id="grandTotal">0</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- Passenger Details Input Section  -->
+              <div class="mt-4 md:mt-6">
+                <form>
+                  <label
+                    class="block mb-2 text-base font-semibold text-[#030712]"
+                    >Passenger Name</label
+                  >
+                  <input
+                    type="text"
+                    class="block w-full p-2 md:p-4 ps-5 md:ps-10 mb-4 md:mb-6 text-sm md:text-lg text-[#1DD100] border border-gray-300 rounded-xl bg-gray-50 focus:ring-green-500 focus:border-green-500"
+                    placeholder="Enter your name"
+                  />
+                  <label
+                    class="block mb-2 text-base font-semibold text-[#030712]"
+                    >Phone Number*</label
+                  >
+                  <input
+                    type="number"
+                    id="passengerNumb"
+                    class="block w-full p-2 md:p-4 ps-5 md:ps-10 mb-4 md:mb-6 text-sm md:text-lg text-[#1DD100] border border-gray-300 rounded-xl bg-gray-50 focus:ring-green-500 focus:border-green-500"
+                    placeholder="Enter your phone number"
+                    required
+                  />
+                  <label
+                    class="block mb-2 text-base font-semibold text-[#030712]"
+                    >Email ID</label
+                  >
+                  <input
+                    type="email"
+                    class="block w-full p-2 md:p-4 ps-5 md:ps-10 mb-4 md:mb-6 text-sm md:text-lg text-[#1DD100] border border-gray-300 rounded-xl bg-gray-50 focus:ring-green-500 focus:border-green-500"
+                    placeholder="Enter your email id"
+                  />
+                  <button
+                    type="button"
+                    id="nextBtn"
+                    data-modal-target="static-modal"
+                    data-modal-toggle="static-modal"
+                    class="text-white w-full bg-[#1DD100] hover:shadow-lg focus:outline-none font-semibold rounded-lg text-xs md:text-base p-2 md:p-4 cursor-not-allowed"
+                    disabled
+                    type="button"
+                  >
+                    Next
+                  </button>
+                  <!-- Modal -->
+                  <div
+                    id="static-modal"
+                    data-modal-backdrop="static"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+                  >
+                    <div
+                      class="relative p-4 w-full max-w-72 md:max-w-2xl max-h-full"
+                    >
+                      <!-- Modal content -->
+                      <div class="relative bg-white rounded-2xl shadow">
+                        <!-- Modal header -->
+                        <div
+                          class="flex flex-col items-center justify-center gap-5 p-4 md:p-5"
+                        >
+                          <img src="./images/success.png" alt="done" />
+                          <h3
+                            class="text-xl md:text-2xl font-bold text-[#27AE60]"
+                          >
+                            SUCCESS
+                          </h3>
+                        </div>
+                        <!-- Modal body -->
+                        <div
+                          class="p-4 md:p-5 space-y-4 text-base md:text-xl text-center text-[#4A4A4A] leading-relaxed"
+                        >
+                          <p class="font-medium">
+                            Thank you for Booking Our Bus Seats. We are working
+                            hard to find the best service and deals for you.
+                          </p>
+                          <p class="font-light">
+                            Shortly you will find a confirmation in your email.
+                          </p>
+                        </div>
+                        <!-- Modal footer -->
+                        <div
+                          class="flex justify-center items-center p-4 md:p-5"
+                        >
+                          <button
+                            data-modal-hide="default-modal"
+                            onclick="window.location.reload()"
+                            type="button"
+                            class="text-white bg-[#27AE60] focus:outline-none font-semibold rounded-[32px] text-base text-center h-12 w-60 md:w-64"
+                          >
+                            Continue
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <ul
+                  class="text-base underline text-[#03071299] flex justify-between items-center mt-4 md:mt-6 px-4 md:px-8"
+                >
+                  <li>Terms and Conditions</li>
+                  <li>Cancellation Policy</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section  -->
+    <footer class="px-4 md:px-12 lg:px-24 py-10 md:py-20 bg-[#030712]">
+      <ul
+        class="grid grid-cols-1 *:mx-auto *:md:mx-0 text-center md:text-left md:grid-cols-2 space-y-4 border-b-2 border-dashed border-white pb-6 md:pb-10"
+      >
+        <li class="text-white text-4xl font-extrabold">Trans-Ticket</li>
+        <li class="md:place-self-end text-[20px] font-semibold text-white">
+          Download our app
+        </li>
+        <li class="text-[#FFFFFFCC] text-lg max-w-[374px]">
+          Trans-Ticket is a digital platform to make your daily commuting
+          better.
+        </li>
+        <li class="md:place-self-end">
+          <img src="./images/playstore.png" alt="play_store" />
+        </li>
+      </ul>
+      <ul
+        class="flex flex-col lg:flex-row justify-between items-center space-y-5 mt-8 text-center"
+      >
+        <li class="text-base text-[#FFFFFFB2]">
+          @designed by Arnab Saha, Trans-Ticket services limited.2024
+        </li>
+        <li
+          class="font-medium text-white flex justify-center items-center gap-5"
+        >
+          <p>Terms & condition</p>
+          <p>Return & refund policy</p>
+          <p>Privacy policy</p>
+        </li>
+      </ul>
+    </footer>
+    <!-- JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
